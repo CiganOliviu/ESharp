@@ -25,6 +25,13 @@
           </e>
         </e>
         <e p="ESharp.csproj" t="IncludeRecursive" />
+        <e p="ESharpSourceCode" t="Include">
+          <e p="FundamentalAlgorithms" t="Include">
+            <e p="FundamentalAlgorithms.cs" t="Include" />
+            <e p="FundamentalAlgorithmsFactoryObject.cs" t="Include" />
+            <e p="IAbstractFundamentalAlgorithms.cs" t="Include" />
+          </e>
+        </e>
         <e p="Program.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -40,6 +47,7 @@
     </e>
     <e p="$PROJECT_DIR$/../TestESharp" t="IncludeRecursive">
       <e p="DataStructuresTests.cs" t="Include" />
+      <e p="FundamentalAlgorithmsTests.cs" t="Include" />
       <e p="TestESharp.csproj" t="IncludeRecursive" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive">

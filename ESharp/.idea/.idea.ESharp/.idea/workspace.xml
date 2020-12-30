@@ -29,6 +29,10 @@
       <change afterPath="$PROJECT_DIR$/ESharp/DataStructures/OneDimensionalArray/AbstractOneDimensionalArrayObject.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ESharp/DataStructures/OneDimensionalArray/OneDimensionalArrayFactoryObject.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ESharp/DataStructures/OneDimensionalArray/OneDimensionalArrayObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/FundamentalAlgorithms/FundamentalAlgorithms.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/FundamentalAlgorithms/FundamentalAlgorithmsFactoryObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ESharp/ESharpSourceCode/FundamentalAlgorithms/IAbstractFundamentalAlgorithms.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestESharp/FundamentalAlgorithmsTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +58,10 @@
         <option value="$PROJECT_DIR$/ESharp/DataStructures/Matrix/IAbstractMatrix.cs" />
         <option value="$PROJECT_DIR$/ESharp/DataStructures/Matrix/MatrixFactoryObject.cs" />
         <option value="$PROJECT_DIR$/../TestESharp/DataStructuresTests.cs" />
+        <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/FundamentalAlgorithms/IAbstractFundamentalAlgorithms.cs" />
+        <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/FundamentalAlgorithms/FundamentalAlgorithmsFactoryObject.cs" />
+        <option value="$PROJECT_DIR$/../TestESharp/FundamentalAlgorithmsTests.cs" />
+        <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/FundamentalAlgorithms/FundamentalAlgorithms.cs" />
       </list>
     </option>
   </component>
@@ -96,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609355399205</updated>
-      <workItem from="1609355416063" duration="3775000" />
+      <workItem from="1609355416063" duration="6313000" />
     </task>
     <servers />
   </component>
@@ -120,30 +128,30 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1609357370890">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom" timestamp="1609361659798">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609357370890" />
-    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1609357370890">
+    <state width="1802" height="275" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609361659798" />
+    <state width="1802" height="275" key="GridCell.Tab.0.center" timestamp="1609361659798">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609357370890" />
-    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1609357370890">
+    <state width="1802" height="275" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609361659798" />
+    <state width="1802" height="275" key="GridCell.Tab.0.left" timestamp="1609361659797">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609357370890" />
-    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1609357370890">
+    <state width="1802" height="275" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609361659797" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right" timestamp="1609361659798">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1802" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609357370890" />
+    <state width="1802" height="275" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609361659798" />
     <state x="2511" y="288" width="800" height="537" key="Rider.ProjectTemplateDialog.Size" timestamp="1609355864686">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2511" y="288" width="800" height="537" key="Rider.ProjectTemplateDialog.Size/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609355864686" />
-    <state x="2677" y="235" width="467" height="643" key="RiderGenerateDialog" timestamp="1609358301491">
+    <state x="2677" y="235" width="467" height="643" key="RiderGenerateDialog" timestamp="1609359847110">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2677" y="235" width="467" height="643" key="RiderGenerateDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609358301491" />
+    <state x="2677" y="235" width="467" height="643" key="RiderGenerateDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1609359847110" />
     <state x="2092" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1609356737356">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
