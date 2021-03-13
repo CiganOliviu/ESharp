@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="336778e3-1647-4667-a72c-7b0f1c14a832" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ESharp/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="336778e3-1647-4667-a72c-7b0f1c14a832" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +48,12 @@
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersPropertiesVerifier/NumbersPropertiesVerifierFactoryObject.cs" />
       <option value="$PROJECT_DIR$/../TestESharp/NumbersPropertiesVerifierTests.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersPropertiesVerifier/NumbersPropertiesVerifier.cs" />
+      <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/OneDimensionalArraysWorkflow/OneDimensionalArraysWorkflowFactoryObject.cs" />
+      <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/IAbstractMatricesWorkflow.cs" />
+      <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/MatricesWorkflowAbstractFactory.cs" />
+      <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/MatricesWorkflow.cs" />
+      <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/OneDimensionalArraysWorkflow/IAbstractOneDimensionalArraysWorkflow.cs" />
+      <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/OneDimensionalArraysWorkflow/OneDimensionalArraysWorkflow.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mOCid7BLc1raT6SrI3MvAOIcRt" />
@@ -68,6 +72,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.ESharp">
@@ -106,6 +111,8 @@
       <workItem from="1615575365935" duration="336000" />
       <workItem from="1615575756334" duration="4498000" />
       <workItem from="1615581099185" duration="831000" />
+      <workItem from="1615667655024" duration="146000" />
+      <workItem from="1615667974696" duration="3679000" />
     </task>
     <servers />
   </component>
