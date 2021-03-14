@@ -35,6 +35,7 @@
     <setting file="file://$PROJECT_DIR$/ESharp/ESharpSourceCode/NumbersAlgorithms/NumbersAlgorithms.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../TestESharp/DataStructuresTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../TestESharp/NumbersAlgorithmsTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../TestESharp/OneDimensionalArraysWorkflowTests.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -52,6 +53,7 @@
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/IAbstractMatricesWorkflow.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/MatricesWorkflowAbstractFactory.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/MatricesWorkflow/MatricesWorkflow.cs" />
+      <option value="$PROJECT_DIR$/../TestESharp/OneDimensionalArraysWorkflowTests.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/OneDimensionalArraysWorkflow/IAbstractOneDimensionalArraysWorkflow.cs" />
       <option value="$PROJECT_DIR$/ESharp/ESharpSourceCode/OneDimensionalArraysWorkflow/OneDimensionalArraysWorkflow.cs" />
     </changedPaths>
@@ -113,6 +115,7 @@
       <workItem from="1615581099185" duration="831000" />
       <workItem from="1615667655024" duration="146000" />
       <workItem from="1615667974696" duration="3679000" />
+      <workItem from="1615750795798" duration="5878000" />
     </task>
     <servers />
   </component>

@@ -9,15 +9,15 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
         int GetArrayElementsSum(IAbstractOneDimensionalArrayObject array);
         int GetArrayElementsProduct(IAbstractOneDimensionalArrayObject array);
         int GetArrayElementsDifference(IAbstractOneDimensionalArrayObject array);
-        int GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array);
-        int GetArrayElementsMean(IAbstractOneDimensionalArrayObject array);
+        float GetArrayElementsDivision(IAbstractOneDimensionalArrayObject array);
+        float GetArrayElementsMean(IAbstractOneDimensionalArrayObject array);
         bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array);
         int AddValueInArray(IAbstractOneDimensionalArrayObject array);
         bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value);
         int[] ConvertNumberToArray(int number);
         int ConvertArrayToNumber(int[] array);
-        int BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster);
-        int BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster);
+        IAbstractOneDimensionalArrayObject BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster);
+        IAbstractOneDimensionalArrayObject BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster);
         IAbstractOneDimensionalArrayObject GetArraysSum(IAbstractOneDimensionalArrayObject arrayOne,
                                                         IAbstractOneDimensionalArrayObject arrayTwo);
         IAbstractOneDimensionalArrayObject GetArraysProduct(IAbstractOneDimensionalArrayObject arrayOne,
