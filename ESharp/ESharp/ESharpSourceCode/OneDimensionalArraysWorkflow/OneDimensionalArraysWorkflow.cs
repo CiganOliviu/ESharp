@@ -81,12 +81,41 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public bool IsArraySymmetric(IAbstractOneDimensionalArrayObject array)
         {
-            throw new System.NotImplementedException();
+            var it = 0;
+            var jit = array.GetLengthOfOneDimensionalArray() - 1;
+
+            while (it < jit)
+            {
+
+                if (array.GetOneDimensionalArray()[it] != array.GetOneDimensionalArray()[jit])
+                    return false;
+                
+                it += 1;
+                jit -= 1;
+            }
+
+            return true;
+        }
+        
+        private static void SetupNewArray(IAbstractOneDimensionalArrayObject array, int[] newArray)
+        {
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                newArray[it] = array.GetOneDimensionalArray()[it];
         }
 
-        public int AddValueInArray(IAbstractOneDimensionalArrayObject array)
+        public IAbstractOneDimensionalArrayObject AddValueInArray(IAbstractOneDimensionalArrayObject array, int value)
         {
-            throw new System.NotImplementedException();
+            var result = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+
+            var newArray = new int[array.GetLengthOfOneDimensionalArray() + 1];
+
+            SetupNewArray(array, newArray);
+
+            newArray[array.GetLengthOfOneDimensionalArray()] = value;
+            
+            result.SetOneDimensionalArray(newArray);
+
+            return result;
         }
 
         public bool IsValueInArray(IAbstractOneDimensionalArrayObject array, int value)
@@ -98,13 +127,13 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             return false;
         }
 
-        private int ReverseNumber(int number)
+        private static int ReverseNumber(int number)
         {
-            int result = 0;
+            var result = 0;
             
             while (number != 0)
             {
-                int digit = number % 10;
+                var digit = number % 10;
                 result = result * 10 + digit;
                 
                 number /= 10;
@@ -113,7 +142,7 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             return result;
         }
 
-        private int GetNumberSize(int number)
+        private static int GetNumberSize(int number)
         {
             var result = 0;
             
@@ -127,7 +156,7 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
         }
         public int[] ConvertNumberToArray(int number)
         {
-            int[] numberAsArray = new int[GetNumberSize(number)];
+            var numberAsArray = new int[GetNumberSize(number)];
             var it = 0;
 
             number = ReverseNumber(number);
@@ -144,7 +173,7 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public int ConvertArrayToNumber(int[] array)
         {
-            int result = 0;
+            var result = 0;
             
             foreach (var element in array)
                 result = result * 10 + element;
@@ -154,12 +183,26 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
 
         public IAbstractOneDimensionalArrayObject BoostUpArray(IAbstractOneDimensionalArrayObject array, int booster)
         {
-            throw new System.NotImplementedException();
+            var result = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                array.GetOneDimensionalArray()[it] *= booster;
+            
+            result.SetOneDimensionalArray(array.GetOneDimensionalArray());
+
+            return result;
         }
 
         public IAbstractOneDimensionalArrayObject BoostDownArray(IAbstractOneDimensionalArrayObject array, int booster)
         {
-            throw new System.NotImplementedException();
+            var result = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            
+            for (var it = 0; it < array.GetLengthOfOneDimensionalArray(); it++)
+                array.GetOneDimensionalArray()[it] /= booster;
+            
+            result.SetOneDimensionalArray(array.GetOneDimensionalArray());
+
+            return result;
         }
 
         public IAbstractOneDimensionalArrayObject GetArraysSum(IAbstractOneDimensionalArrayObject arrayOne,
@@ -186,9 +229,21 @@ namespace ESharp.ESharpSourceCode.OneDimensionalArraysWorkflow
             throw new System.NotImplementedException();
         }
 
+        private static bool AssertNumbers(int firstNumber, int secondNumber)
+        {
+            return firstNumber == secondNumber;
+        }
+        
         public bool AreArraysEqual(IAbstractOneDimensionalArrayObject arrayOne, IAbstractOneDimensionalArrayObject arrayTwo)
         {
-            throw new System.NotImplementedException();
+            if (!AssertNumbers(arrayOne.GetLengthOfOneDimensionalArray(), arrayTwo.GetLengthOfOneDimensionalArray()))
+                return false;
+            
+            for (var it = 0; it < arrayOne.GetLengthOfOneDimensionalArray(); it++)
+                if (arrayOne.GetOneDimensionalArray()[it] != arrayTwo.GetOneDimensionalArray()[it])
+                    return false;
+            
+            return true;
         }
 
         public void SortArray(IAbstractOneDimensionalArrayObject array)
