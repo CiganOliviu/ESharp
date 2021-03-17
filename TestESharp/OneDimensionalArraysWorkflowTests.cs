@@ -211,6 +211,66 @@ namespace TestESharp
         }
 
         [Test]
+        public void Test_GetArraysSum_()
+        {
+            var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayOne.SetOneDimensionalArray(new []{1, 2, 3, 4});
+            
+            var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayTwo.SetOneDimensionalArray(new []{-1, -2, -3, -4});
+            
+            var result = _oneDimensionalArraysWorkflow.GetArraysSum(arrayOne, arrayTwo);
+            var expected = new int[] {0, 0, 0, 0};
+            
+            Assert.AreEqual(result.GetOneDimensionalArray(), expected);
+        }
+        
+        [Test]
+        public void Test_GetArraysProduct_()
+        {
+            var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayOne.SetOneDimensionalArray(new []{1, 2, 3, 4});
+            
+            var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayTwo.SetOneDimensionalArray(new []{-1, -2, -3, -4});
+            
+            var result = _oneDimensionalArraysWorkflow.GetArraysProduct(arrayOne, arrayTwo);
+            var expected = new int[] {-1, -4, -9, -16};
+            
+            Assert.AreEqual(result.GetOneDimensionalArray(), expected);
+        }
+        
+        [Test]
+        public void Test_GetArraysDifference_()
+        {
+            var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayOne.SetOneDimensionalArray(new []{1, 2, 3, 4});
+            
+            var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayTwo.SetOneDimensionalArray(new []{-1, -2, -3, -4});
+            
+            var result = _oneDimensionalArraysWorkflow.GetArraysDifference(arrayOne, arrayTwo);
+            var expected = new int[] {2, 4, 6, 8};
+            
+            Assert.AreEqual(result.GetOneDimensionalArray(), expected);
+        }
+        
+        [Test]
+        public void Test_GetArraysDivision_()
+        {
+            var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayOne.SetOneDimensionalArray(new []{10, 22, 33, 44});
+            
+            var arrayTwo = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
+            arrayTwo.SetOneDimensionalArray(new []{2, 3, 4, 10});
+            
+            var result = _oneDimensionalArraysWorkflow.GetArraysDivision(arrayOne, arrayTwo);
+            var expected = new int[] {5, 7, 8, 4};
+            
+            Assert.AreEqual(result.GetOneDimensionalArray(), expected);
+        }
+
+        [Test]
         public void Test_AreArraysEqual_()
         {
             var arrayOne = OneDimensionalArrayFactoryObject.GetOneDimensionalArrayObject();
@@ -225,6 +285,17 @@ namespace TestESharp
             arrayTwo.SetOneDimensionalArray(new []{-1, 2, -3, 4, -5});
             
             Assert.IsTrue(_oneDimensionalArraysWorkflow.AreArraysEqual(arrayOne, arrayTwo));
+        }
+        
+
+        [Test]
+        public void Test_SortArray_()
+        {
+            _oneDimensionalArray.SetOneDimensionalArray(new [] {7, 6, 5, 4, 3, 2, 1});
+            _oneDimensionalArraysWorkflow.SortArray(_oneDimensionalArray);
+            var expected = new int[] {1, 2, 3, 4, 5, 6, 7};
+            
+            Assert.AreEqual(_oneDimensionalArray.GetOneDimensionalArray(), expected);
         }
         
     }
